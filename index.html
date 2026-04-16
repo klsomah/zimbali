@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zimbali Exotic Farm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Zimbali <em>Exotic Farm</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="crops.html">Our Crops</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="crops.html">Our Crops</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SLIDESHOW -->
+  <section class="hero" id="heroSection">
+
+    <!-- SLIDES — replace src URLs with your own farm photos -->
+    <div class="slideshow" id="slideshow">
+      <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1920&q=80')">
+        <div class="slide-badge">🌿 Our Tropical Gardens</div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1920&q=80')">
+        <div class="slide-badge">🌱 Fresh from the Fields</div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1500651858858-18ea74ab98b0?auto=format&fit=crop&w=1920&q=80')">
+        <div class="slide-badge">👨‍🌾 African Farmers at Work</div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1574943320219-cfe9d5f81c7e?auto=format&fit=crop&w=1920&q=80')">
+        <div class="slide-badge">🌶️ Exotic Pepper Harvest</div>
+      </div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1920&q=80')">
+        <div class="slide-badge">🍃 Rich Green Foliage</div>
+      </div>
+    </div>
+
+    <!-- Dark overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero text -->
+    <div class="hero-content">
+      <p class="hero-tag">Farm Fresh · Naturally Grown</p>
+      <h1 class="hero-title">Welcome to<br /><span>Zimbali Exotic Farm</span></h1>
+      <p class="hero-sub">Cultivating rare and beloved crops rooted in culture, flavor, and tradition — straight from our fields to your table.</p>
+      <div class="hero-btns">
+        <a href="crops.html" class="btn btn-primary">View Our Crops</a>
+        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Slide controls -->
+    <button class="slide-arrow slide-prev" id="slidePrev" aria-label="Previous slide">&#8592;</button>
+    <button class="slide-arrow slide-next" id="slideNext" aria-label="Next slide">&#8594;</button>
+
+    <!-- Dot indicators -->
+    <div class="slide-dots" id="slideDots">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+      <button class="dot" data-index="3"></button>
+      <button class="dot" data-index="4"></button>
+    </div>
+
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- FARM PHOTO GALLERY STRIP -->
+  <section class="gallery-strip">
+    <div class="gallery-inner">
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80')">
+        <div class="gallery-label">Our Fields</div>
+      </div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80')">
+        <div class="gallery-label">Lush Crops</div>
+      </div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1500651858858-18ea74ab98b0?auto=format&fit=crop&w=600&q=80')">
+        <div class="gallery-label">Harvest Time</div>
+      </div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1574943320219-cfe9d5f81c7e?auto=format&fit=crop&w=600&q=80')">
+        <div class="gallery-label">Exotic Peppers</div>
+      </div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80')">
+        <div class="gallery-label">Tropical Greens</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="features">
+    <div class="container">
+      <div class="section-label">Why Zimbali</div>
+      <h2 class="section-title">Grown with Purpose</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Naturally Grown</h3>
+          <p>Our crops are cultivated using sustainable practices that respect the land and preserve its vitality for generations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Cultural Roots</h3>
+          <p>We grow crops deeply tied to African, Caribbean, and Latin American culinary traditions — ingredients that tell a story.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌶️</div>
+          <h3>Exotic Varieties</h3>
+          <p>From rare leafy greens to world-record hot peppers, our selection goes far beyond the ordinary grocery store shelf.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Community First</h3>
+          <p>We work closely with local communities and chefs to bring authentic, hard-to-find produce within reach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CROP PREVIEW -->
+  <section class="crop-preview">
+    <div class="container">
+      <div class="section-label">What We Grow</div>
+      <h2 class="section-title">A Taste of Our Harvest</h2>
+      <div class="preview-grid">
+        <div class="preview-card exotic-leaves">
+          <div class="preview-icon">🍃</div>
+          <h3>Exotic Leaves</h3>
+          <p>Jute Leaf, Cassava Leaf, Leaf of Life, Malabar Spinach & more</p>
+        </div>
+        <div class="preview-card vegetables">
+          <div class="preview-icon">🥬</div>
+          <h3>Fresh Vegetables</h3>
+          <p>Tomato, Eggplant, Corn, Cucumber, Bell Peppers, Pumpkin & more</p>
+        </div>
+        <div class="preview-card herbs">
+          <div class="preview-icon">🌿</div>
+          <h3>Herbs & Greens</h3>
+          <p>Basil, Cilantro, Collard Greens, Cabbage & Sweet Potato Leaves</p>
+        </div>
+        <div class="preview-card peppers">
+          <div class="preview-icon">🌶️</div>
+          <h3>Fiery Peppers</h3>
+          <p>Scotch Bonnet, Ghost Pepper, Carolina Reaper & Apocalypse Scorpion</p>
+        </div>
+      </div>
+      <div class="preview-cta">
+        <a href="crops.html" class="btn btn-primary">See Full Crop List</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <h2>Ready to order or partner with us?</h2>
+      <p>Reach out to learn about availability, wholesale, and custom orders.</p>
+      <a href="contact.html" class="btn btn-white">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">🌿</span>
+        <span class="footer-name">Zimbali Exotic Farm</span>
+      </div>
+      <p class="footer-tagline">Farm Fresh · Naturally Grown · Culturally Rooted</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="crops.html">Crops</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Zimbali Exotic Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

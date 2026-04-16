@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Zimbali Exotic Farm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-leaf">🌿</span>
+        <span class="logo-text">Zimbali <em>Exotic Farm</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="crops.html">Our Crops</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="crops.html">Our Crops</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-tag">We'd love to hear from you</p>
+      <h1>Contact Us</h1>
+      <p>Whether you're a chef, a home cook, or a wholesale buyer — get in touch and let's grow together.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send Us a Message</h2>
+        <p class="form-sub">Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="order">Place an Order</option>
+              <option value="wholesale">Wholesale Inquiry</option>
+              <option value="availability">Crop Availability</option>
+              <option value="partnership">Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <div class="form-success" id="formSuccess">
+            ✅ Thank you! Your message has been sent. We'll be in touch soon.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>We're happy to answer questions about our crops, seasonal availability, bulk purchasing, and more.</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Zimbali Exotic Farm<br />Available upon request</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>Contact us via the form<br />for phone details</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>info@zimbaliexoticfarm.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday – Saturday<br />7:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-note">
+          <h3>Wholesale &amp; Bulk Orders</h3>
+          <p>We supply restaurants, grocery stores, and community markets. Reach out via the form and select <strong>"Wholesale Inquiry"</strong> — we'll follow up with pricing and availability.</p>
+        </div>
+
+        <div class="info-note pepper-note">
+          <h3>🌶️ Hot Pepper Inquiries</h3>
+          <p>Interested in our exotic pepper varieties for hot sauce production, food challenges, or specialty retail? We'd love to work with you.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">🌿</span>
+        <span class="footer-name">Zimbali Exotic Farm</span>
+      </div>
+      <p class="footer-tagline">Farm Fresh · Naturally Grown · Culturally Rooted</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="crops.html">Crops</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Zimbali Exotic Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
